@@ -1,128 +1,117 @@
 # Passport-Verification-System-
 Passport Verification  System 
 
-�
-�
- :فﺋﺎظوﻟا 
-1. ةءارﻗ تﺎﻧﺎﯾﺑ زاوﺟﻟا ) OCR ( 
-2. لﯾﻠﺣﺗ ةروﺻﻟا ) CNN ( 
-3. صﺣﻓ رﯾوزﺗﻟا ) ELA + Features ( 
-4. ءﺎطﻋإ :ﺔﺟﯾﺗﻧ 
-○ لﻣﺗﺣﻣ ﻲﻘﯾﻘﺣ 
-○ لﻣﺗﺣﻣ فﯾزﻣ 
- 
-�
-�
- تﺎﻧوﻛﻣ عورﺷﻣﻟا 
-1. ةءارﻗ صﻧﻟا ) OCR ( 
-:مدﺧﺗﺳا 
-● Tesseract OCR 
-�
-�
- ةرﻛﻔﻟا ﺔﻣﺎﻌﻟا 
-�
-�
- :فدﮭﻟا 
-فﯾﻧﺻﺗ ةروﺻ زاوﺟﻟا :ﻰﻟإ 
-● Real (ﻲﻘﯾﻘﺣ) 
-● Fake (فﯾزﻣ) 
-�
-�
- تاوطﺧ عورﺷﻣﻟا مادﺧﺗﺳﺎﺑ CNN 
-1. زﯾﮭﺟﺗ تﺎﻧﺎﯾﺑﻟا مھأ) (ةوطﺧ 
-مزﻻ نوﻛﯾ كدﻧﻋ Dataset اذﮭﺑ :لﻛﺷﻟا 
-/
-passport_dataset
-│
-/
-/
-train
-real
-──├
-──├
-/
-fake
-/
-──└
-test
-│
-│
-│
-──├
-/
-/نﻵا
-ثدﺣﯾﺳ
-:ﺎﮭﯾﻓ
-ﺔﮭﺟاو
-📤
-كﻟ
-اذﺎﻣ
-رﮭظﺗﺳ
-🎯
-لﯾﻐﺷﺗﻟا
-ةروﺻ
-ةروﺻﻟا
-+
-ﻊﻓر
-🖼
-رز
-ضرﻋ
-🧠
-رﯾوزﺗﻟا
-ﺔﺑﺳﻧ
-ﺔﺟﯾﺗﻧﻟا
-● 
-● 
-●<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c2d6ccb4-15ec-4d78-9fa4-486f57e2c47a" />
-�
-�
- :ًﻻوأ تاودﻷا ﺔﻣدﺧﺗﺳﻣﻟا ﻲﻓ عورﺷﻣﻟا 
-�
-�
- 1( ءﺎﻛذﻟا ﻲﻋﺎﻧطﺻﻻا ) CNN ( 
-● TensorFlow 
-● Keras 
-● مدﺧﺗﺳﺗ ءﺎﻧﺑﻟ جذوﻣﻧ مﻠﻌﺗﯾ زﯾﯾﻣﺗﻟا نﯾﺑ زاوﺟﻟا ﻲﻘﯾﻘﺣﻟا فﯾزﻣﻟاو 
- 
-�
-�
- 2( ﺔﺟﻟﺎﻌﻣ روﺻﻟا 
-● PIL (Pillow ( 
-● NumPy 
-● لﯾوﺣﺗﻟ روﺻﻟا ﺎھزﯾﮭﺟﺗو جذوﻣﻧﻠﻟ 
- 
-�
-�
- 3( ضرﻋ ﺞﺋﺎﺗﻧﻟا 
- 
-●  
-● Gradio → ءﺎﻧﺑﻟ ﺔﮭﺟاو مدﺧﺗﺳﻣﻟا 
- 
-�
-�
- 4( ﺔﺋﯾﺑﻟا 
-● Google Colab / Jupyter Notebook 
-● Google Drive نﯾزﺧﺗﻟ تﺎﻧﺎﯾﺑﻟا 
- 
-�
-�
- :ًﺎﯾﻧﺎﺛ لﺣ لﻛﺎﺷﻣﻟا ﻲﻠﻟا كﺗﮭﺟاو 
-❌
- ﺔﻠﻛﺷﻣﻟا 1: FileNotFoundError 
-:بﺑﺳﻟا 
-:بﺑﺳﻟ 
-رﺎﺳﻣﻟا طﻠﻏ وأ دﻠﺟﻣﻟا رﯾﻏ دوﺟوﻣ 
-:لﺣﻟا 
-os.path.exists("path") 
-❌
- ﺔﻠﻛﺷﻣﻟا 2: No images found 
-:بﺑﺳﻟا 
-تادﻠﺟﻣﻟا ﺔﯾﺿﺎﻓ وأ روﺻﻟا وﻣ ﺔﻣظﻧﻣ 
-:لﺣﻟا 
-مزﻻ نوﻛﯾ لﻛﯾﮭﻟا :اذﻛ 
-train/ 
-  real/ 
-  fake/
+# Passport Verification System 🛂
 
-real
-fake
+## Project Idea
+An AI-based system that verifies passport images using OCR, image processing, and deep learning to detect whether a passport is real or fake.
+
+---
+
+# Features
+
+- OCR text extraction from passport images
+- Image analysis using CNN
+- Forgery detection using ELA (Error Level Analysis)
+- Classification result:
+  - Real Passport
+  - Fake Passport
+- User-friendly interface (Gradio)
+- Image upload and real-time prediction
+
+---
+
+# System Workflow
+
+1. Upload passport image
+2. Extract text using OCR (Tesseract)
+3. Process image using CNN model
+4. Apply ELA features for forgery detection
+5. Combine results
+6. Output final prediction (Real / Fake)
+
+---
+
+# Dataset Structure
+
+```text id="dataset_structure"
+passport_dataset/
+│
+├── train/
+│   ├── real/
+│   └── fake/
+│
+└── test/
+    ├── real/
+    └── fake/
+```
+
+---
+
+# Tools & Technologies
+
+## AI Model
+- TensorFlow
+- Keras
+- CNN (Convolutional Neural Network)
+
+## Image Processing
+- PIL (Pillow)
+- NumPy
+
+## OCR
+- Tesseract OCR
+
+## UI
+- Gradio
+
+## Environment
+- Google Colab
+- Jupyter Notebook
+- Google Drive
+
+---
+
+# Model Output
+
+The system predicts:
+
+- 🟢 Real Passport → High authenticity probability
+- 🔴 Fake Passport → Suspicious manipulation detected
+
+---
+
+# Problems Faced & Solutions
+
+## ❌ FileNotFoundError
+**Cause:** Wrong file path or missing folder  
+**Solution:** Use:
+```python
+os.path.exists("path")
+```
+
+---
+
+## ❌ No images found
+**Cause:** Empty or unorganized dataset  
+**Solution:** Ensure structure:
+
+```text id="fix_structure"
+train/
+  real/
+  fake/
+```
+
+---
+
+# Final Result
+
+✔ Detects passport authenticity  
+✔ Uses AI + OCR + Image Forensics  
+✔ Fast prediction  
+✔ Supports real-world security use cases  
+
+---
+
+# Summary
+This project combines computer vision, deep learning, and OCR to build an intelligent passport verification system that helps detect fake documents efficiently and accurately.
